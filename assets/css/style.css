@@ -132,6 +132,26 @@ figure {
   display: none;
 }
 
+.carousel {
+  max-height: 461px;
+}
+
+.carousel__container {
+  min-height: 410px;
+  max-height: 640px;
+  height: 63vh;
+  -webkit-clip-path: none;
+  clip-path: none;
+  background-color: var(--dark);
+}
+
+.carousel-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 838px) {
   .header-mobile {
     display: none;
@@ -293,5 +313,12 @@ figure {
     height: 20px;
     cursor: pointer;
     margin: 0 8px 0 0;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .carousel__container {
+    -webkit-clip-path: polygon(0 0,0 100%,100% 92%,100% 0);
+    clip-path: polygon(0 0,0 100%,100% 92%,100% 0);
   }
 }
