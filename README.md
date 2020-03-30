@@ -1,2 +1,2 @@
-# narbel
-Narbel is a copy design of marvel.com
+# marvel
+A copy layout of Marvel website, for practical purpose of web design.
