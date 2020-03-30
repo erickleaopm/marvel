@@ -66,14 +66,19 @@ figure {
 .icon--svg--white-fill {
   fill: var(--white);
 }
+.icon--svg--white-stroke {
+  stroke: #fff;
+}
 
 .icon--svg.icon--search {
   fill: none;
   stroke-width: 2px;
   stroke-linecap: square;
 }
-.icon--svg--white-stroke {
-  stroke: #fff;
+
+.icon--credit-card svg {
+  height: 17px;
+  margin-right: 10px;
 }
 
 .menu {
@@ -168,7 +173,7 @@ figure {
   }
   
   .users > ul > li {
-    padding: 0 8px;
+    padding: 0 4px;
     text-transform: uppercase;
   }
   
@@ -271,5 +276,22 @@ figure {
 
   .promo__description {
     display: none;
+  }
+
+  .header-desktop .mastercard {
+    display: flex;
+    line-height: .9;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .insider {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 8px 0 0;
   }
 }
