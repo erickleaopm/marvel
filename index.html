@@ -9,8 +9,7 @@
     Marvel.com | The Unofficial Site for Marvel Movies, Characters, Comics, TV
   </title>
   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:400,700|Roboto:400,700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -74,7 +73,7 @@
     <div class="logo">
       <img src="./assets/img/logo/logo.svg" alt="Narbel" />
     </div>
-    <div class="card">
+    <div class="credit-card">
       <a href="/" class="mastercard">
         <span class="icon--svg icon--svg--white-fill icon--credit-card">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.8 80.5">
@@ -98,14 +97,114 @@
     </div>
     <nav class="nav">
       <ul>
-        <li><a href="/">Videos</a></li>
-        <li><a href="/">Characters</a></li>
-        <li><a href="/">Comics</a></li>
-        <li><a href="/">Movies</a></li>
-        <li><a href="/">TV Shows</a></li>
-        <li><a href="/">Games</a></li>
-        <li><a href="/">News</a></li>
-        <li><a href="/">More</a></li>
+        <li>
+          <a class="nav-link" href="/">Videos</a>
+          <div class="desktopMenu desktopMenu-videos is-active">
+            <div class="desktopMenu__container">
+              <div class="desktopMenu__header">
+                <ul>
+                  <li>
+                    <a href="#">Trailers & Extras</a>
+                  </li>
+                  <li>
+                    <a href="#">Digital Series</a>
+                  </li>
+                  <li>
+                    <a href="#">All Video</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="desktopMenu__content">
+                <h2 class="title">Trending Video</h2>
+                <div class="grid">
+                  <div class="grid-item">
+                    <div class="card">
+                      <div class="card__image">
+                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/poster_6148587307001_3bfd1d88fa27845b197f0c526d5f5c42.jpg" alt="Thanos">
+                      </div>
+                      <div class="card__content">
+                        <div class="card__title">
+                          <a href="#">Earth's Mightiest Show <span>/ S3 E23</span></a>
+                        </div>
+                        <div class="card__headline">
+                          <a href="#">Thanos Is Related to The Eternals?!</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card">
+                      <div class="card__image">
+                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/poster_6147740345001_65a17dc4599aa8e06aafc568881bc3ef.jpg" alt="Marvel Heads Up!">
+                      </div>
+                      <div class="card__content">
+                        <div class="card__title">
+                          <a href="#">Marvel Gaming: Let's Play</a>
+                        </div>
+                        <div class="card__headline">
+                          <a href="#">The Marvel 'Heads Up!' Challenge</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card">
+                      <div class="card__image">
+                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/poster_6146876297001_73f8181d700e1ee0663d0ec590180d50_0.jpg" alt="Marvel's Pull List">
+                      </div>
+                      <div class="card__content">
+                        <div class="card__title">
+                          <a href="#">Marvel's The Pull List</a>
+                        </div>
+                        <div class="card__headline">
+                          <a href="#">FREE COMICS on Marvel Unlimited | Marvel's Pull List</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card">
+                      <div class="card__image">
+                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/poster_6148457845001_e99cd1159ca7ee66057bd30d605191ba.jpg" alt="Trailers and Extras">
+                      </div>
+                      <div class="card__content">
+                        <div class="card__title">
+                          <a href="#">Trailers & Extras</a>
+                        </div>
+                        <div class="card__headline">
+                          <a href="#">Top 10 Wolverine Costumes!</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desktopMenu__footer">
+                <ul>
+                  <li>
+                    <h4>Our Shows</h4>
+                  </li>
+                  <li>
+                    <a href="#">Earth's Mightiest Show</a>
+                  </li>
+                  <li>
+                    <a href="#">This Week in Marvel</a>
+                  </li>
+                  <li>
+                    <a href="#">Women of Marvel</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a class="nav-link" href="/">Characters</a></li>
+        <li><a class="nav-link" href="/">Comics</a></li>
+        <li><a class="nav-link" href="/">Movies</a></li>
+        <li><a class="nav-link" href="/">TV Shows</a></li>
+        <li><a class="nav-link" href="/">Games</a></li>
+        <li><a class="nav-link" href="/">News</a></li>
+        <li><a class="nav-link" href="/">More</a></li>
       </ul>
     </nav>
     <div class="space2"></div>
@@ -151,6 +250,11 @@
       </a>
     </div>
   </header>
+
+  <div class="menu__videos">
+
+  </div>
+
   <section class="promo">
     <div class="promo__container">
       <figure>
