@@ -4,26 +4,31 @@ const menuButton = document.querySelector(".Menu-button");
 const menuCloseButton = document.querySelector(".Menu-close");
 const Menu = document.querySelector(".Menu");
 const menuDesktopLinks = document.querySelectorAll(".Menu-link");
+const subMenuLinks = document.querySelectorAll(".Submenu-open");
+const subMenuBackLinks = document.querySelectorAll(".Submenu-back");
 
 menuButton.addEventListener("click", (event) => {
   event.preventDefault();
   Menu.classList.toggle("isActive");
-  // const menuLinks = document.querySelectorAll(".Menu-link");
-  // menuLinks.forEach((menuLink) => {
-  //   menuLink.addEventListener("click", (event) => {
-  //     const subMenuButton = menuLink.children[0];
-  //     const subMenu = menuLink.children[1];
-  //     subMenuButton.addEventListener("click", (event) => {
-  //       event.preventDefault();
-  //       subMenu.classList.toggle("isActive");
-  //     });
-  //   });
-  // });
 });
 
 menuCloseButton.addEventListener("click", (event) => {
   event.preventDefault();
   Menu.classList.toggle("isActive");
+});
+
+subMenuLinks.forEach((submenu) => {
+  submenu.addEventListener("click", (event) => {
+    event.preventDefault();
+    submenu.nextElementSibling.classList.toggle("isActive");
+  });
+});
+
+subMenuBackLinks.forEach((backLink) => {
+  backLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    backLink.parentElement.classList.toggle("isActive");
+  });
 });
 
 menuDesktopLinks.forEach((link) => {
