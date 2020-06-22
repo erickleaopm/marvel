@@ -586,7 +586,7 @@
                     <a class="Menu-nav-item Modal-open" href="#">Sign In</a>
                   </li>
                   <li>
-                    <a class="Menu-nav-item" href="#">Join</a>
+                    <a class="Menu-nav-item Modal-Join-open" href="#">Join</a>
                   </li>
                 </ul>
               </nav>
@@ -759,7 +759,7 @@
                   </li>
                   <li><span class="Menu-Desktop-link">|</span></li>
                   <li>
-                    <a class="Menu-Desktop-link" href="#">
+                    <a class="Menu-Desktop-link Modal-Join-open" href="#">
                       Join
                     </a>
                     <div class="Join" style="display: none;">
@@ -1341,17 +1341,19 @@
                 <a href="#">Need help signing in?</a>
               </div>
               <div class="Modal-register">
-                <a href="" class="Modal-button">Create an Account</a>
+                <a href="#" class="Modal-button Modal-Join-open"
+                  >Create an Account</a
+                >
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <div id="modalJoin" class="Modal isActive">
+    <div id="modalJoin" class="Modal">
       <div class="Modal-container">
         <div class="Modal-item">
-          <button id="modalJoin-close" class="Modal-close"></button>
+          <button id="modalJoin-close" class="Modal-Join-close"></button>
           <div class="Modal-header">
             <div class="Modal-imageWrapper">
               <img
@@ -1387,7 +1389,7 @@
                   class="Modal-input"
                   type="email"
                   name="email"
-                  id="email"
+                  id="register[email]"
                   placeholder="Email Address"
                 />
               </div>
@@ -1396,7 +1398,7 @@
                   class="Modal-input"
                   type="password"
                   name="password"
-                  id="password"
+                  id="register[password]"
                   placeholder="Password"
                 />
               </div>
@@ -1533,7 +1535,10 @@
             </form>
           </div>
           <div class="Modal-footer">
-            <p>Already have an account? <a href="#">Sign In</a></p>
+            <p>
+              Already have an account?
+              <a href="#" class="Modal-open">Sign In</a>
+            </p>
           </div>
         </div>
       </div>

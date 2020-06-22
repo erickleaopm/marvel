@@ -369,7 +369,8 @@ button {
   min-height: 23rem;
   padding-bottom: 8px;
 }
-.Modal-close {
+.Modal-close,
+.Modal-Join-close {
   cursor: pointer;
   width: 44px;
   height: 44px;

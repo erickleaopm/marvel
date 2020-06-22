@@ -7,9 +7,14 @@ const menuDesktopLinks = document.querySelectorAll(".Menu-link");
 const subMenuLinks = document.querySelectorAll(".Submenu-open");
 const subMenuBackLinks = document.querySelectorAll(".Submenu-back");
 
+// Modals
 const modalSignIn = document.querySelector("#modalSignIn");
-const modalOpenButton = document.querySelector(".Modal-open");
-const modalCloseButton = document.querySelector(".Modal-close");
+const modalOpenButton = document.querySelectorAll(".Modal-open");
+const modalCloseButton = document.querySelectorAll(".Modal-close");
+
+const modalJoin = document.querySelector("#modalJoin");
+const modalJoinOpenButton = document.querySelectorAll(".Modal-Join-open");
+const modalJoinCloseButton = document.querySelectorAll(".Modal-Join-close");
 
 menuButton.addEventListener("click", (event) => {
   event.preventDefault();
@@ -48,12 +53,33 @@ menuDesktopLinks.forEach((link) => {
   });
 });
 
-modalOpenButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  modalSignIn.classList.add("isActive");
+// Modals Actions
+modalOpenButton.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    modalSignIn.classList.add("isActive");
+    modalJoin.classList.remove("isActive");
+  });
 });
 
-modalCloseButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  modalSignIn.classList.remove("isActive");
+modalCloseButton.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    modalSignIn.classList.remove("isActive");
+  });
+});
+
+modalJoinOpenButton.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    modalJoin.classList.add("isActive");
+    modalSignIn.classList.remove("isActive");
+  });
+});
+
+modalJoinCloseButton.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    modalJoin.classList.remove("isActive");
+  });
 });
