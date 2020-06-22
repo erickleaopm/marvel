@@ -753,7 +753,7 @@
               <nav class="Users-nav">
                 <ul>
                   <li>
-                    <a class="Menu-Desktop-link" href="#">
+                    <a class="Menu-Desktop-link Modal-open" href="#">
                       Sign in
                     </a>
                   </li>
@@ -1299,6 +1299,55 @@
         </div>
       </div>
     </header>
+    <div id="modalSignIn" class="Modal">
+      <div class="Modal-container">
+        <div class="Modal-item">
+          <button id="modalSignIn-close" class="Modal-close"></button>
+          <div class="Modal-header">
+            <div class="Modal-imageWrapper">
+              <img
+                src="./images/logos/marvel-insider-modal.png"
+                alt="Marvel Insider"
+                class="Modal-image"
+              />
+            </div>
+          </div>
+          <div class="Modal-content">
+            <form class="Modal-form">
+              <div class="input-group">
+                <input
+                  class="Modal-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="input-group">
+                <input
+                  class="Modal-input"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="button-group">
+                <button type="submit" class="Modal-button Modal-button-red">
+                  Sign In
+                </button>
+              </div>
+              <div class="Modal-form-help">
+                <a href="#">Need help signing in?</a>
+              </div>
+              <div class="Modal-register">
+                <a href="" class="Modal-button">Create an Account</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./js/app.js"></script>
   </body>
 </html>

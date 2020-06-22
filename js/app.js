@@ -7,6 +7,10 @@ const menuDesktopLinks = document.querySelectorAll(".Menu-link");
 const subMenuLinks = document.querySelectorAll(".Submenu-open");
 const subMenuBackLinks = document.querySelectorAll(".Submenu-back");
 
+const modalSignIn = document.querySelector("#modalSignIn");
+const modalOpenButton = document.querySelector(".Modal-open");
+const modalCloseButton = document.querySelector(".Modal-close");
+
 menuButton.addEventListener("click", (event) => {
   event.preventDefault();
   Menu.classList.toggle("isActive");
@@ -42,4 +46,14 @@ menuDesktopLinks.forEach((link) => {
     link.classList.toggle("isActive");
     link.children[1].classList.toggle("isActive");
   });
+});
+
+modalOpenButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  modalSignIn.classList.add("isActive");
+});
+
+modalCloseButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  modalSignIn.classList.remove("isActive");
 });

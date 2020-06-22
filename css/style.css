@@ -40,12 +40,12 @@ html {
   font-size: 100%;
 }
 
-*,
+/* *,
 :after,
 :before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 body {
   font-family: "Roboto", Trebuchet MS, Helvetica, Arial, sans-serif;
@@ -338,6 +338,172 @@ button {
 .Icon-Credit-card svg {
   height: 17px;
   margin-right: 10px;
+}
+
+/* Modal SignIn */
+.Modal {
+  position: fixed;
+  display: none;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  transition: opacity 300ms;
+  will-change: opacity;
+}
+.Modal.isActive {
+  opacity: 1;
+  display: block;
+  z-index: 1;
+}
+.Modal-container {
+  width: 410px;
+  margin: 30px auto;
+  position: relative;
+}
+.Modal-item {
+  background: var(--white);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  min-height: 23rem;
+  padding-bottom: 8px;
+}
+.Modal-close {
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+  background: transparent url(../images/icons/modal-close.svg) no-repeat center
+    center;
+  background-size: 16px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.Modal-header {
+  margin: 55px 40px 25px;
+}
+.Modal-imageWrapper {
+  width: 200px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Modal-image {
+  width: 100%;
+}
+.Modal-content {
+  margin: 0 40px 25px;
+}
+.input-group {
+  margin-bottom: 8px;
+}
+.button-group {
+  margin-bottom: 18px;
+}
+.Modal-input {
+  border: 1px solid #ccc;
+  padding: 0 16px;
+  border-radius: 5px;
+  color: #ccc;
+  font-family: Roboto, sans-serif;
+  line-height: normal;
+  font-size: 14px;
+  outline: 0;
+  height: 42px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Modal-input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #999;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+.Modal-input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+.Modal-input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #999;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+.Modal-input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.Modal-register {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding: 20px 0 0;
+  margin-top: 36px;
+  margin-bottom: 18px;
+}
+
+.Modal-button {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-size: 13.2px;
+  font-weight: 700;
+  line-height: 38px;
+  background-color: #fff;
+  border: 2px solid #5c5c5c;
+  width: 200px;
+  min-width: 42px;
+  max-width: 400px;
+  position: relative;
+  padding: 0 18px;
+  margin: 0 auto;
+  outline: 0 none;
+  text-align: center;
+  border-radius: 0;
+  cursor: pointer;
+  color: #000;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.Modal-button-red {
+  width: 100%;
+  background: var(--red);
+  color: var(--white);
+  border: 0;
+  height: 41px;
+  -webkit-mask: none;
+  background-image: none;
+}
+
+.Modal-form-help {
+  text-align: right;
+  text-decoration: underline;
+  margin-bottom: 12px;
+}
+
+.Modal-form-help a {
+  color: var(--red);
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Roboto, sans-serif;
 }
 
 @media screen and (min-width: 601px) {
