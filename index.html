@@ -583,7 +583,7 @@
               <nav>
                 <ul>
                   <li>
-                    <a class="Menu-nav-item" href="#">Sign In</a>
+                    <a class="Menu-nav-item Modal-open" href="#">Sign In</a>
                   </li>
                   <li>
                     <a class="Menu-nav-item" href="#">Join</a>
@@ -1344,6 +1344,196 @@
                 <a href="" class="Modal-button">Create an Account</a>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modalJoin" class="Modal isActive">
+      <div class="Modal-container">
+        <div class="Modal-item">
+          <button id="modalJoin-close" class="Modal-close"></button>
+          <div class="Modal-header">
+            <div class="Modal-imageWrapper">
+              <img
+                src="./images/logos/marvel-insider-modal.png"
+                alt="Marvel Insider"
+                class="Modal-image"
+              />
+            </div>
+          </div>
+          <div class="Modal-content">
+            <h2 class="Modal-title">Create your account</h2>
+            <form class="Modal-form">
+              <div class="input-group">
+                <input
+                  class="Modal-input"
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="input-group">
+                <input
+                  class="Modal-input"
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="input-group">
+                <input
+                  class="Modal-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="input-group">
+                <input
+                  class="Modal-input"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="checkbox-group">
+                <label for="show_password">
+                  <input
+                    type="checkbox"
+                    name="show_password"
+                    id="show_password"
+                  />
+                  <span>Show password</span>
+                </label>
+              </div>
+              <div class="select-group">
+                <span>Birth Date</span>
+                <select name="birthMonth" id="birthMonth" class="birth-month">
+                  <option value="">Month</option>
+                  <option value="0" label="Jan">Jan</option>
+                  <option value="1" label="Feb">Feb</option>
+                  <option value="2" label="Mar">Mar</option>
+                  <option value="3" label="Apr">Apr</option>
+                  <option value="4" label="May">May</option>
+                  <option value="5" label="Jun">Jun</option>
+                  <option value="6" label="Jul">Jul</option>
+                  <option value="7" label="Aug">Aug</option>
+                  <option value="8" label="Sep">Sep</option>
+                  <option value="9" label="Oct">Oct</option>
+                  <option value="10" label="Nov">Nov</option>
+                  <option value="11" label="Dic">Dic</option>
+                </select>
+                <select name="birthDay" id="birthDay" class="birth-day">
+                  <option value="">Day</option>
+                  <option value="1" label="1">1</option>
+                  <option value="2" label="2">2</option>
+                  <option value="3" label="3">3</option>
+                  <option value="4" label="4">4</option>
+                  <option value="5" label="5">5</option>
+                  <option value="6" label="6">6</option>
+                  <option value="7" label="7">7</option>
+                  <option value="8" label="8">8</option>
+                  <option value="9" label="9">9</option>
+                  <option value="10" label="10">10</option>
+                  <option value="11" label="11">11</option>
+                  <option value="12" label="12">12</option>
+                  <option value="13" label="13">13</option>
+                  <option value="14" label="14">14</option>
+                  <option value="15" label="15">15</option>
+                  <option value="16" label="16">16</option>
+                  <option value="17" label="17">17</option>
+                  <option value="18" label="18">18</option>
+                  <option value="19" label="19">19</option>
+                  <option value="20" label="20">20</option>
+                  <option value="21" label="21">21</option>
+                  <option value="22" label="22">22</option>
+                  <option value="23" label="23">23</option>
+                  <option value="24" label="24">24</option>
+                  <option value="25" label="25">25</option>
+                  <option value="26" label="26">26</option>
+                  <option value="27" label="27">27</option>
+                  <option value="28" label="28">28</option>
+                  <option value="29" label="29">29</option>
+                  <option value="30" label="30">30</option>
+                  <option value="31" label="31">31</option>
+                </select>
+                <select name="birthYear" id="birthYear" class="birth-year">
+                  <option value="">Year</option>
+                  <option value="2020" label="2020">2020</option>
+                  <option value="2019" label="2019">2019</option>
+                  <option value="2018" label="2018">2018</option>
+                  <option value="2017" label="2017">2017</option>
+                  <option value="2016" label="2016">2016</option>
+                  <option value="2015" label="2015">2015</option>
+                  <option value="2014" label="2014">2014</option>
+                  <option value="2013" label="2013">2013</option>
+                  <option value="2012" label="2012">2012</option>
+                  <option value="2011" label="2011">2011</option>
+                  <option value="2010" label="2010">2010</option>
+                  <option value="2009" label="2009">2009</option>
+                  <option value="2008" label="2008">2008</option>
+                  <option value="2007" label="2007">2007</option>
+                  <option value="2006" label="2006">2006</option>
+                  <option value="2005" label="2005">2005</option>
+                  <option value="2004" label="2004">2004</option>
+                  <option value="2003" label="2003">2003</option>
+                  <option value="2002" label="2002">2002</option>
+                  <option value="2001" label="2001">2001</option>
+                  <option value="2000" label="2000">2000</option>
+                </select>
+              </div>
+              <div class="checkbox-group">
+                <label for="subscribe">
+                  <input
+                    type="checkbox"
+                    name="subscribe"
+                    id="subscribe"
+                    checked
+                  />
+                  <span>
+                    Yes! I would like to receive updates, special offers, and
+                    other information from Marvel and The Walt Disney Family of
+                    Companies.
+                  </span>
+                </label>
+              </div>
+              <div class="checkbox-group">
+                <label for="newsletter">
+                  <input
+                    type="checkbox"
+                    name="newsletter"
+                    id="newsletter"
+                    checked
+                  />
+                  <span>
+                    Yes, I would like to receive Marvel’s Need To Know
+                    newsletter for news, video/podcast updates, and more.
+                  </span>
+                </label>
+              </div>
+              <section class="PrivacyPolicy">
+                <p>
+                  By creating an account, I agree to the
+                  <a href="#">Terms of Use</a> and acknowledge that I have read
+                  the <a href="#">Privacy Policy</a>
+                </p>
+              </section>
+              <section class="Region">
+                <p>My home country/region: Mexico. <a href="#">Change</a>.</p>
+              </section>
+              <div class="button-group">
+                <button type="submit" class="Modal-button Modal-button-red">
+                  Create Account
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="Modal-footer">
+            <p>Already have an account? <a href="#">Sign In</a></p>
           </div>
         </div>
       </div>

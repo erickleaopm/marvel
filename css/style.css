@@ -40,12 +40,12 @@ html {
   font-size: 100%;
 }
 
-/* *,
+*,
 :after,
 :before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} */
+}
 
 body {
   font-family: "Roboto", Trebuchet MS, Helvetica, Arial, sans-serif;
@@ -359,8 +359,6 @@ button {
   z-index: 1;
 }
 .Modal-container {
-  width: 410px;
-  margin: 30px auto;
   position: relative;
 }
 .Modal-item {
@@ -504,6 +502,13 @@ button {
   font-size: 14px;
   line-height: 21px;
   font-family: Roboto, sans-serif;
+}
+
+@media screen and (min-width: 420px) {
+  .Modal-container {
+    width: 410px;
+    margin: 30px auto;
+  }
 }
 
 @media screen and (min-width: 601px) {
@@ -832,6 +837,8 @@ button {
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: RobotoCondensed Bold, sans-serif;
+    margin: 0;
   }
   /* Characters Menu */
   .Character-imageWrapper {
