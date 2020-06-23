@@ -424,28 +424,28 @@ button {
 
 .Modal-input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #999;
+  color: var(--ligthGray);
   font-size: 14px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
 .Modal-input::-moz-placeholder {
   /* Firefox 19+ */
-  color: #999;
+  color: var(--ligthGray);
   font-size: 14px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
 .Modal-input:-ms-input-placeholder {
   /* IE 10+ */
-  color: #999;
+  color: var(--ligthGray);
   font-size: 14px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
 .Modal-input:-moz-placeholder {
   /* Firefox 18- */
-  color: #999;
+  color: var(--ligthGray);
   font-size: 14px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -465,7 +465,7 @@ button {
   font-size: 13.2px;
   font-weight: 700;
   line-height: 38px;
-  background-color: #fff;
+  background-color: var(--white);
   border: 2px solid #5c5c5c;
   width: 200px;
   min-width: 42px;
@@ -507,7 +507,7 @@ button {
 
 /* Join Desktop Version */
 .Join {
-  background: #151515;
+  background: var(--black);
   min-width: 400px;
   width: 500px;
   height: auto;
@@ -542,7 +542,7 @@ button {
   text-align: center;
   margin-top: 0;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--white);
 }
 .Join-logo {
   margin-bottom: 40px;
@@ -554,7 +554,7 @@ button {
   text-transform: none;
   letter-spacing: 0.4px;
   text-align: left;
-  color: #fff;
+  color: var(--white);
   list-style: square;
 }
 .Join-instructions li {
@@ -593,6 +593,49 @@ button {
 }
 .Join-footer a {
   text-decoration: underline;
+}
+
+/* SubHeader Section */
+.SubHeader {
+  background: var(--black);
+  height: 40px;
+}
+.SubHeader-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.SubHeader-link {
+  display: flex;
+  width: inherit;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.SubHeader-text {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1;
+  font-family: RobotoCondensed, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.SubHeader-mobile {
+  display: block;
+}
+.SubHeader-desktop {
+  display: none;
+  font-size: 14px;
+}
+.SubHeader-imageWrapper {
+  margin: 0 0 0 10px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SubHeader-image {
+  width: 100%;
 }
 
 @media screen and (min-width: 420px) {
@@ -781,7 +824,7 @@ button {
     left: 0;
     display: grid;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--white);
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     top: 100%;
@@ -988,6 +1031,13 @@ button {
     font-weight: 700;
     line-height: 1;
     font-family: "RobotoCondensed", Helvetica, sans-serif;
+  }
+  /* SubHeader Section */
+  .SubHeader-mobile {
+    display: none;
+  }
+  .SubHeader-desktop {
+    display: block;
   }
 }
 @media screen and (min-width: 961px) {
