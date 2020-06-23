@@ -505,6 +505,96 @@ button {
   font-family: Roboto, sans-serif;
 }
 
+/* Join Desktop Version */
+.Join {
+  background: #151515;
+  min-width: 400px;
+  width: 500px;
+  height: auto;
+  box-shadow: -10px 10px 10px -5px hsla(0, 0%, 73%, 0.15);
+  transition: opacity 0.5s ease-in-out;
+  will-change: opacity;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 52px;
+  left: 0;
+  z-index: 1;
+}
+.Join.isActive {
+  opacity: 1;
+  visibility: visible;
+}
+.Join-container {
+  padding: 30px 60px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Join-heading {
+  font-family: RobotoCondensed, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.Join-logo {
+  margin-bottom: 40px;
+  height: 54px;
+}
+.Join-instructions {
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  text-transform: none;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #fff;
+  list-style: square;
+}
+.Join-instructions li {
+  line-height: 1.57;
+  letter-spacing: 0.3px;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+.Join-instructions li:last-of-type {
+  margin-bottom: 0;
+}
+.Join-instructions a {
+  text-decoration: underline;
+}
+.Join-instructions .small {
+  font-size: 13px;
+}
+.Join-button {
+  margin-top: 80px;
+  width: 255px;
+  height: 46px;
+  font-size: 14px;
+  line-height: 1;
+  font-family: Roboto Bold, sans-serif;
+  text-transform: uppercase;
+  background: var(--red);
+  color: var(--white);
+}
+.Join-footer {
+  margin-top: 48px;
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-transform: none;
+}
+.Join-footer a {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 420px) {
   .Modal-container {
     width: 410px;
@@ -569,7 +659,7 @@ button {
     box-shadow: 1px 0 0 0 var(--gray) inset;
   }
   .Users.isActive {
-    background-color: var(--dark);
+    background-color: var(--black);
   }
   .Insider-logo {
     width: 20px;

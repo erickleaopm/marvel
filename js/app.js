@@ -7,6 +7,11 @@ const menuDesktopLinks = document.querySelectorAll(".Menu-link");
 const subMenuLinks = document.querySelectorAll(".Submenu-open");
 const subMenuBackLinks = document.querySelectorAll(".Submenu-back");
 
+// Join Desktop Version
+const joinOpen = document.querySelector(".Join-open");
+const users = document.querySelector(".Users");
+const joinInstructions = document.querySelector(".Join");
+
 // Modals
 const modalSignIn = document.querySelector("#modalSignIn");
 const modalOpenButton = document.querySelectorAll(".Modal-open");
@@ -82,4 +87,11 @@ modalJoinCloseButton.forEach((button) => {
     event.preventDefault();
     modalJoin.classList.remove("isActive");
   });
+});
+
+// Join Desktop version
+joinOpen.addEventListener("click", (event) => {
+  event.preventDefault();
+  joinInstructions.classList.add("isActive");
+  users.classList.add("isActive");
 });
