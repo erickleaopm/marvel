@@ -64,6 +64,7 @@ modalOpenButton.forEach((button) => {
     event.preventDefault();
     modalSignIn.classList.add("isActive");
     modalJoin.classList.remove("isActive");
+    Menu.classList.remove("isActive");
   });
 });
 
@@ -79,6 +80,9 @@ modalJoinOpenButton.forEach((button) => {
     event.preventDefault();
     modalJoin.classList.add("isActive");
     modalSignIn.classList.remove("isActive");
+    joinInstructions.classList.remove("isActive");
+    users.classList.remove("isActive");
+    Menu.classList.remove("isActive");
   });
 });
 

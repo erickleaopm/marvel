@@ -133,7 +133,7 @@ button {
 .Menu-close {
   position: absolute;
   max-width: 375px;
-  z-index: 80;
+  z-index: 2;
   padding: 20px 30px;
 }
 .Menu-nav-container {
@@ -240,12 +240,14 @@ button {
   box-sizing: border-box;
 }
 .Submenu.isActive {
+  bottom: 0;
+  right: 0;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: inherit;
+  width: 100%;
   overflow-y: hidden;
-  z-index: 90;
+  z-index: 2;
 }
 .Submenu-back {
   display: block;
@@ -402,11 +404,168 @@ button {
 .Modal-content {
   margin: 0 40px 25px;
 }
+.Modal-title {
+  color: var(--red);
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 16.8px;
+  font-family: RobotoCondensed, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 0 14px;
+  margin-bottom: 5px;
+  -webkit-font-smoothing: initial;
+}
 .input-group {
   margin-bottom: 8px;
 }
 .button-group {
   margin-bottom: 18px;
+}
+#modalJoin .button-group {
+  padding-top: 8px;
+}
+/* Checkbox Customs */
+.checkbox-group {
+  margin-bottom: 8px;
+}
+.checkbox-group.show-password {
+  padding: 0.2em 0 0;
+  margin-bottom: 18px;
+}
+.checkbox-group input[type="checkbox"] {
+  display: none;
+}
+.checkbox-group label {
+  display: inline-block;
+  position: relative;
+  min-height: 24px;
+  margin: 0;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+.checkbox-group.show-password label {
+  padding: 12px 0 12px 24px;
+}
+.checkbox-group span {
+  display: block;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #5e646b;
+  text-align: left;
+  margin: 0 0 3.5px 10px;
+  -webkit-font-smoothing: initial;
+}
+.checkbox-group.show-password span {
+  margin: -9px 8px 0;
+}
+.checkbox-group span:before {
+  content: " ";
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  display: block;
+  text-align: center;
+  background-color: var(--white);
+  border: 1px var(--ligthGray);
+  border-radius: 3px;
+  box-shadow: none;
+  width: 14px;
+  height: 14px;
+  z-index: 1;
+  border-color: transparent;
+}
+.checkbox-group input[type="checkbox"]:checked + span:before {
+  transition: background-color 70ms;
+  background: transparent none;
+  background-size: auto;
+  border: 0 none;
+  background-color: #666;
+  border-color: transparent;
+}
+.checkbox-group span:after {
+  content: " ";
+  position: absolute;
+  background-color: var(--white);
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  left: 0;
+  top: 1px;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+}
+.select-group {
+  position: relative;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  white-space: nowrap;
+}
+.select-group span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: #5e646b;
+  margin-bottom: 0.25em;
+  -webkit-font-smoothing: initial;
+}
+.select-group select {
+  border: 1px solid #ccc;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 4px;
+  background: #fff url("../images/icons/chevron-down.svg") no-repeat right
+    0.75em center;
+  background-size: 0.75em auto;
+  padding: 0 16px;
+  color: #abb0b8;
+  -webkit-appearance: none;
+  height: 42px;
+  outline: 0;
+  margin-right: 9px;
+}
+.select-group select:last-of-type {
+  margin-right: 0;
+}
+select.birth-month {
+  width: 36%;
+}
+select.birth-day {
+  width: 27%;
+}
+select.birth-year {
+  width: 30%;
+}
+.section-addresses {
+  margin-left: 30px;
+  padding-top: 18px;
+  display: block;
+}
+.PrivacyPolicy,
+.Region {
+  padding-top: 18px;
+}
+.PrivacyPolicy p,
+.Region p {
+  color: #5e646b;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  letter-spacing: 0;
+  margin-bottom: 1em;
+  -webkit-font-smoothing: initial;
+}
+.PrivacyPolicy-content a,
+.Region a {
+  color: var(--red);
+  -webkit-font-smoothing: initial;
+}
+.PrivacyPolicy-content a:hover,
+.Region a:hover {
+  text-decoration: underline;
 }
 .Modal-input {
   border: 1px solid #ccc;
@@ -503,6 +662,28 @@ button {
   font-size: 14px;
   line-height: 21px;
   font-family: Roboto, sans-serif;
+}
+
+.Modal-footer {
+  margin: 18px 40px 0;
+  text-align: center;
+}
+.Modal-footer p {
+  color: #5e646b;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  margin-bottom: 1em;
+  -webkit-font-smoothing: initial;
+}
+.Modal-footer a {
+  color: var(--red);
+  font-weight: 600;
+  font-family: Helvetica, sans-serif;
+  -webkit-font-smoothing: initial;
+}
+.Modal-footer a:hover {
+  text-decoration: underline;
 }
 
 /* Join Desktop Version */
@@ -840,7 +1021,7 @@ button {
   .Menu-Desktop.isActive {
     visibility: visible;
     opacity: 1;
-    z-index: 999;
+    z-index: 1;
   }
   .Menu-Desktop-container {
     display: flex;
